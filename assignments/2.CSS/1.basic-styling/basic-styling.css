@@ -1,0 +1,14 @@
+@import '../../assignments.css';
+
+img {
+    display: block;
+}
+
+
+.main{
+    margin: 0px;
+}
+
+.main li img{
+    width: 100%;
+}
