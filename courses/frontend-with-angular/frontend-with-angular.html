@@ -104,7 +104,7 @@
         <nav class="navbar navbar-expand-xl">
             <div class="container">
                 <!-- Logo START -->
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="../../index.html">
                     <img class="light-mode-item navbar-brand-item" src="../../common/assets/edupoly-logo-light.png"
                         alt="logo">
                     <img class="dark-mode-item navbar-brand-item" src="../../common/assets/edupoly-logo-dark.png"
@@ -165,7 +165,7 @@
                         </li>
 
                         <!-- Nav item 2 Tutorials -->
-                        <li class="nav-item dropdown"><a class="nav-link" href="/tutorials">Tutorials</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link" href="https://edupoly.com/tutorials">Tutorials</a></li>
 
                         <!-- Nav item 3 Trainings -->
                         <li class="nav-item dropdown">
@@ -238,6 +238,23 @@
         <!-- Logo Nav END -->
     </header>
     <!-- Header END -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="contactModalLabel">Edupoly - Contact Us</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe class="contactModal"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdNKhTFKU0TWAnlemwQTdL-VLEdpYUUOVG8fRQ1V9RWYLNAhA/viewform?embedded=true"
+                        frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- **************** MAIN CONTENT START **************** -->
     <main>
@@ -391,12 +408,12 @@ Page content START -->
                                                     <button
                                                         class="accordion-button fw-bold rounded d-sm-flex d-inline-block collapsed"
                                                         type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapse-1" aria-expanded="true"
+                                                        data-bs-target="#collapse-1" aria-expanded="false"
                                                         aria-controls="collapse-1">
                                                         Week 1 - HTML, CSS and Bootstrap
                                                     </button>
                                                 </h6>
-                                                <div id="collapse-1" class="accordion-collapse collapse show"
+                                                <div id="collapse-1" class="accordion-collapse collapse"
                                                     aria-labelledby="heading-1" data-bs-parent="#accordionExample2">
                                                     <div class="accordion-body p-0">
                                                         <hr class="my-0"> <!-- Divider -->
@@ -2428,12 +2445,12 @@ Page content START -->
                                                     <button
                                                         class="accordion-button fw-bold rounded d-sm-flex d-inline-block collapsed"
                                                         type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapse-21" aria-expanded="true"
+                                                        data-bs-target="#collapse-21" aria-expanded="false"
                                                         aria-controls="collapse-21">
                                                         Structuring a webpage with HTML
                                                     </button>
                                                 </h6>
-                                                <div id="collapse-21" class="accordion-collapse collapse show"
+                                                <div id="collapse-21" class="accordion-collapse collapse"
                                                     aria-labelledby="heading-1" data-bs-parent="#accordionExample3">
                                                     <div class="accordion-body p-0">
                                                         <hr class="my-0"> <!-- Divider -->
@@ -3400,7 +3417,7 @@ Page content START -->
                                                 </div>
                                             </div>
 
-                                            <!-- AAngular directives - ngIf -->
+                                            <!-- Angular directives - ngIf -->
                                             <div class="accordion-item mb-3">
                                                 <h6 class="accordion-header font-base" id="heading-7">
                                                     <button
@@ -3518,7 +3535,7 @@ Page content START -->
                                                 </div>
                                             </div>
 
-                                            <!-- Angular directives ngStyle -->
+                                            <!-- Angular directives ngStyle and ngClass -->
                                             <div class="accordion-item mb-3">
                                                 <h6 class="accordion-header font-base" id="heading-9">
                                                     <button
@@ -3526,7 +3543,7 @@ Page content START -->
                                                         type="button" data-bs-toggle="collapse"
                                                         data-bs-target="#collapse-29" aria-expanded="false"
                                                         aria-controls="collapse-29">
-                                                        Angular directives - ngStyle
+                                                        Angular directives - ngStyle and ngClass
                                                     </button>
                                                 </h6>
                                                 <div id="collapse-29" class="accordion-collapse collapse"
@@ -4133,22 +4150,22 @@ Page content START -->
                             <div class="col-md-6 col-lg-12">
                                 <!-- Video START -->
                                 <div class="card shadow p-2 mb-4 z-index-9">
-                                    <div class="overflow-hidden rounded-3">
+                                    <!-- <div class="overflow-hidden rounded-3">
                                         <img src="assets/images/courses/4by3/01.jpg" class="card-img"
-                                            alt="course image">
+                                            alt="course image"> -->
                                         <!-- Overlay -->
-                                        <div class="bg-overlay bg-dark opacity-6"></div>
-                                        <div class="card-img-overlay d-flex align-items-start flex-column p-3">
+                                        <!-- <div class="bg-overlay bg-dark opacity-6"></div>
+                                        <div class="card-img-overlay d-flex align-items-start flex-column p-3"> -->
                                             <!-- Video button and link -->
-                                            <div class="m-auto">
+                                            <!-- <div class="m-auto">
                                                 <a href="https://www.youtube.com/embed/tXHviS-4ygo"
                                                     class="btn btn-lg text-danger btn-round btn-white-shadow mb-0"
                                                     data-glightbox="" data-gallery="course-video">
                                                     <i class="fas fa-play"></i>
                                                 </a>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </div> -->
+                                    <!-- </div> -->
 
                                     <!-- Card body -->
                                     <div class="card-body px-3">
@@ -4162,7 +4179,7 @@ Page content START -->
                                             </div>
 
                                             <!-- Register button -->
-                                            <a href="#" class="btn btn-success mb-0">Register</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-success mb-0">Register</a>
                                         </div>
                                     </div>
                                 </div>
@@ -4235,23 +4252,15 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/17.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Frontend with Angular</a></h5>
+                                        <h5 class="card-title"><a href="./frontend-with-angular.html">Frontend with Angular</a></h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-info bg-opacity-10 text-info"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Frontend
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
                                             <h3 class="text-success mb-0">₹15000</h3>
                                         </div>
@@ -4268,23 +4277,15 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/18.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Frontend with ReactJS</a></h5>
+                                        <h5 class="card-title"><a href="../frontend-with-react/frontend-with-react.html">Frontend with ReactJS</a></h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-info bg-opacity-10 text-info"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Frontend
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
                                             <h3 class="text-success mb-0">₹15000</h3>
                                         </div>
@@ -4301,26 +4302,18 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/21.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Fullstack with MEAN</a>
+                                        <h5 class="card-title"><a href="../fullstack-with-mean/fullstack-with-mean.html">Fullstack with MEAN</a>
                                         </h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-success bg-opacity-10 text-success"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Fullstack
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
-                                            <h3 class="text-success mb-0">₹15000</h3>
+                                            <h3 class="text-success mb-0">₹25000</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -4335,26 +4328,18 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/20.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Fullstack with MERN</a>
+                                        <h5 class="card-title"><a href="../fullstack-with-mern/fullstack-with-mern.html">Fullstack with MERN</a>
                                         </h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-success bg-opacity-10 text-success"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Fullstack
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
-                                            <h3 class="text-success mb-0">₹15000</h3>
+                                            <h3 class="text-success mb-0">₹25000</h3>
                                         </div>
                                     </div>
                                 </div>

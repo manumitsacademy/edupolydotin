@@ -104,7 +104,7 @@
         <nav class="navbar navbar-expand-xl">
             <div class="container">
                 <!-- Logo START -->
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="../../index.html">
                     <img class="light-mode-item navbar-brand-item" src="../../common/assets/edupoly-logo-light.png"
                         alt="logo">
                     <img class="dark-mode-item navbar-brand-item" src="../../common/assets/edupoly-logo-dark.png"
@@ -165,7 +165,7 @@
                         </li>
 
                         <!-- Nav item 2 Tutorials -->
-                        <li class="nav-item dropdown"><a class="nav-link" href="/tutorials">Tutorials</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link" href="https://edupoly.com/tutorials">Tutorials</a></li>
 
                         <!-- Nav item 3 Trainings -->
                         <li class="nav-item dropdown">
@@ -238,6 +238,23 @@
         <!-- Logo Nav END -->
     </header>
     <!-- Header END -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="contactModalLabel">Edupoly - Contact Us</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe class="contactModal"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdNKhTFKU0TWAnlemwQTdL-VLEdpYUUOVG8fRQ1V9RWYLNAhA/viewform?embedded=true"
+                        frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- **************** MAIN CONTENT START **************** -->
     <main>
@@ -392,12 +409,12 @@ Page content START -->
                                                     <button
                                                         class="accordion-button fw-bold rounded d-sm-flex d-inline-block collapsed"
                                                         type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapse-1" aria-expanded="true"
+                                                        data-bs-target="#collapse-1" aria-expanded="false"
                                                         aria-controls="collapse-1">
                                                         Week 1 - HTML, CSS and Bootstrap
                                                     </button>
                                                 </h6>
-                                                <div id="collapse-1" class="accordion-collapse collapse show"
+                                                <div id="collapse-1" class="accordion-collapse collapse"
                                                     aria-labelledby="heading-1" data-bs-parent="#accordionExample2">
                                                     <div class="accordion-body p-0">
                                                         <hr class="my-0"> <!-- Divider -->
@@ -3005,12 +3022,12 @@ Page content START -->
                                                     <button
                                                         class="accordion-button fw-bold rounded d-sm-flex d-inline-block collapsed"
                                                         type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapse-21" aria-expanded="true"
+                                                        data-bs-target="#collapse-21" aria-expanded="false"
                                                         aria-controls="collapse-21">
-                                                        HTML
+                                                        Structuring a webpage with HTML
                                                     </button>
                                                 </h6>
-                                                <div id="collapse-21" class="accordion-collapse collapse show"
+                                                <div id="collapse-21" class="accordion-collapse collapse"
                                                     aria-labelledby="heading-1" data-bs-parent="#accordionExample3">
                                                     <div class="accordion-body p-0">
                                                         <hr class="my-0"> <!-- Divider -->
@@ -3107,7 +3124,7 @@ Page content START -->
                                                         type="button" data-bs-toggle="collapse"
                                                         data-bs-target="#collapse-22" aria-expanded="false"
                                                         aria-controls="collapse-22">
-                                                        CSS
+                                                        Styling a webpage using CSS
                                                     </button>
                                                 </h6>
                                                 <div id="collapse-22" class="accordion-collapse collapse"
@@ -3206,7 +3223,7 @@ Page content START -->
                                                         type="button" data-bs-toggle="collapse"
                                                         data-bs-target="#collapse-23" aria-expanded="false"
                                                         aria-controls="collapse-23">
-                                                        JavaScript
+                                                        Programming with JavaScript
                                                     </button>
                                                 </h6>
                                                 <div id="collapse-23" class="accordion-collapse collapse"
@@ -3269,6 +3286,1309 @@ Page content START -->
                                                             <div class="ms-2">
                                                                 <h6 class="mb-0 fw-normal"><a target="_blank" href="../../assignments/3.JavaScript/5.dom-and-events/dom-and-events.html">DOM and events</a></h6>
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Angular rendering element and interpolation -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-4">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-24" aria-expanded="false"
+                                                        aria-controls="collapse-24">
+                                                        Angular rendering element and interpolation
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-24" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-4" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Render a h1 element in template</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/1.1-render-element-in-html-code-spm3h8?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display some text using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/3.1-string-interpolation-code-n5dk6d?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Data binding -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-5">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-25" aria-expanded="false"
+                                                        aria-controls="collapse-25">
+                                                        Data binding
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-25" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-5" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display some text with data binding using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/2.1-evalute-expression-in-interipolation-code-efl7y7?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Evaluate logical expressions and display them using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/4.1-logical-expression-code-wqss1c?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display the square root of 14 using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/7.1-print-square-root-of-14-code-21wm64?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                         <!-- Item -->
+                                                         <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Evaluate the integer part of a decimal number and display it using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/8.1-print-integer-part-of-the-number-123-44-16rnlh?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        
+                                                         <!-- Item -->
+                                                         <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Transform a string into uppercase and display it using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/9.1-print-string-praveen-in-uppercase-code-r71cou?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                         <!-- Item -->
+                                                         <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Evaluate the length of a string and display it using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/10.1-print-string-lengthof-praveen-code-9x496i?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                         <!-- Item -->
+                                                         <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Evaluate the reverse of a string and display it using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/11.1-print-reverse-of-string-praveen-code-9pq7vv?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                         <!-- Item -->
+                                                         <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Evaluate the sum of two numbers and display it using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/12.1-evaluate-additon-of-two-variables-values-code-v2vgdx?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                         <!-- Item -->
+                                                         <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Evaluate the greatest of two numbers and display it using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/13.1-display-greatest-of-two-variable-values-code-hzvime?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                         <!-- Item -->
+                                                         <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Evaluate whether a number is even or odd and display 'even' or 'odd' using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/14.1-display-variable-value-even-or-odd-code-7qy3y1?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                         <!-- Item -->
+                                                         <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Evaluate whether a number is positive or negative and print 'positive' or 'negative' using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/15.1-diplay-variable-value-is-postive-or-negative-code-wgxrmu?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                         <!-- Item -->
+                                                         <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Determine the greatest between three numbers and display it using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/16.1-display-gretest-of-values-hc60t0?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        
+
+                                                         <!-- Item -->
+                                                         <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Conditionally change the image URL using property binding</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/19.1-conditionally-apply-url-to-image-code-hy1ebd?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Merge two arrays and display all the elements</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/20-0-2.1-print-merged-array-of-values-of-given-two-arrays-code-culmoy?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item No Link to this content -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Apply border-width to an element using property binding</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://cheerful-taffy-645e1c.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item No Link to this content -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Apply styles to h1 elements using property binding</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://radiant-meerkat-6185db.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Flatten a multi-dimensional array and print it using interpolation</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://playful-tanuki-3902c1.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <!-- Item --> 
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Angular Directives - ngFor -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-6">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-26" aria-expanded="false"
+                                                        aria-controls="collapse-26">
+                                                        Angular directives - ngFor
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-26" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-6" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Create a list from an array of numbers</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/5.1-print-array-ofnumbers-code-2nn2be?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Create a list from an array of strings</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/6.1-print-array-of-strings-code-jbdxzf?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Create a list from an array of values</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/20-0-1.1-print-array-of-values-in-li-code-93jr9q?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Create a list of h1 elements from an array of numbers</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/20-0-3.1-print-array-of-numbers-in-h1-element-code-dy2nw8?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Sort an array and display the elements in a list</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/20-1.1-print-array-values-in-sorted-order-in-list-items-code-hcydzk?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Create a list of h1 elements from an array of strings</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/21.1-print-array-strings-in-list-items-code-fucf4v?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Create unordered list and ordered list from an array of strings</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/21-1.1-print-array-strings-ol-and-ul-code-922qeo?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                         <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display a list of strings in lowercase from an array of strings</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/23.0-print-array-strings-in-lowercase-in-list-items-boilerplate-r102yq?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display two ordered lists in uppercase and lowercase from an array of strings</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/21-2.1-print-array-strings-ol-of-uppercase-strings-and-ul-of-lowercase-code-m9sh6t?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Create cards from an array of objects</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://legendary-dolphin-d15178.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display a table for a given array of objects</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://fastidious-mermaid-9e79ed.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Print each object in a separate list for a given array of objects</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://charming-lily-a325d9.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Print the object property values in uppercase from an array of objects</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://charming-figolla-f33203.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Print the properties of an object</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://iridescent-cheesecake-9185db.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display the images from an array of image urls</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://astounding-beijinho-0f9338.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Print only the first two letters of string elements from an array of strings</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://vermillion-strudel-7c41b0.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Print only the first letter of string elements from an array of strings</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://melodic-crisp-636e83.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Take an array of strings and display them in reverse order in a list</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stately-gecko-d0173f.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">display array of objects in table with female students row in pink</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://grand-taffy-86da28.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">display each array of object in table</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://celebrated-klepon-8b8880.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">display each string of array in flex boxes</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://glistening-boba-5644f8.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">display each array element in flex boxes</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://effervescent-fairy-852527.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Angular directives - ngIf -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-7">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-27" aria-expanded="false"
+                                                        aria-controls="collapse-27">
+                                                        Angular directives - ngIf
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-27" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-7" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display different elements conditionally using ngIf</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/17.1-display-diffrent-eleements-conditionally-code-fihs9v?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display different images conditionally using ngIf</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://codesandbox.io/s/18.1-display-diffrent-images-conditionally-code-putygw?file=/src/app/app.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display student details from an array of object and display male/female image for male/female students</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://splendid-strudel-7c1d54.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display numbers from an array only which are less than 25</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://zingy-maamoul-ced081.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display numbers from an array only which are greater than 25</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://thunderous-meringue-f2ee2e.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Print only odd numbers in  a list from an array of numbers</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://charming-brioche-fd5a4e.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Angular directives ngStyle -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-9">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-29" aria-expanded="false"
+                                                        aria-controls="collapse-29">
+                                                        Angular directives - ngStyle
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-29" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-9" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Apply green color in list items if positive and red color if negative</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://dainty-kelpie-63ce2a.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Apply green color in list items if even and red color if odd</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://glittery-basbousa-54bcb2.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display array of objects in table with different colors for rows having<br/> male and female people</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://taupe-piroshki-6c02a2.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display array values in a list and apply green color for even values<br/> and red color for odd values</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://iridescent-queijadas-2b3292.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display array values in a list and apply green color if the string length<br> is even and red color if length is odd</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://iridescent-queijadas-2b3292.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">apply red color to html h1 element</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://profound-crepe-509277.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display array values in a list and apply italic style if the value is even<br/> and apply bold style if the value is odd</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://effortless-hotteok-cffb39.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Event binding -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-8">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-28" aria-expanded="false"
+                                                        aria-controls="collapse-28">
+                                                        Event binding
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-28" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-8" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display the content of an element when clicked on it</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://cheery-bunny-1537ca.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">digital clock</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://starlit-cactus-633f1e.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Create a project that registers the number of likes and dislikes</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://helpful-lolly-9aed73.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Create a todo list with delete button</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://scintillating-duckanoo-cd0687.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display the elements of an array with index in a list</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://peaceful-fairy-604c00.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Bind event handler with arguments to display the number 100</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://incomparable-medovik-e99318.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display the selected date from datepicker in h1 element</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://celadon-dango-fca018.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display check box value in console</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://polite-granita-c48097.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Print the button value in console on clicking it</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://leafy-medovik-d9e702.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display select box value in h1 element</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://euphonious-twilight-3a40e0.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display respective images on clicking radio button</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://starlit-crostata-91f3b7.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display radio button value on check</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://serene-beignet-9f13b3.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Calculate multiplication and division of two numbers and display <br/>it using buttons</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://gentle-zuccutto-acd10d.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Calculate the subtraction of two numbers and display it using button</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://cool-truffle-2ae493.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Calculate the addition of two numbers and display it using button</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://beautiful-froyo-f32a52.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display text-box value in h1 element on keyup event</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://illustrious-dasik-b14fc8.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Display text box value in uppercase in h1 element</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://spectacular-semolina-05aaa3.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+                                                        
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">display text box value in h1 element on clicking a button</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://subtle-chimera-e17a0c.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Print text box value in console on clicking a button</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://verdant-elf-855a88.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Alert some text on clicking a button</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://creative-pony-9abca5.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">display the event object for a click on div with 300px width and height<br/> with 200px in angular</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://statuesque-speculoos-b1dae9.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -3397,14 +4717,14 @@ Page content START -->
                             <div class="col-md-6 col-lg-12">
                                 <!-- Video START -->
                                 <div class="card shadow p-2 mb-4 z-index-9">
-                                    <div class="overflow-hidden rounded-3">
+                                    <!-- <div class="overflow-hidden rounded-3">
                                         <img src="assets/images/courses/4by3/01.jpg" class="card-img"
-                                            alt="course image">
+                                            alt="course image"> -->
                                         <!-- Overlay -->
-                                        <div class="bg-overlay bg-dark opacity-6"></div>
-                                        <div class="card-img-overlay d-flex align-items-start flex-column p-3">
+                                        <!-- <div class="bg-overlay bg-dark opacity-6"></div>
+                                        <div class="card-img-overlay d-flex align-items-start flex-column p-3"> -->
                                             <!-- Video button and link -->
-                                            <div class="m-auto">
+                                            <!-- <div class="m-auto">
                                                 <a href="https://www.youtube.com/embed/tXHviS-4ygo"
                                                     class="btn btn-lg text-danger btn-round btn-white-shadow mb-0"
                                                     data-glightbox="" data-gallery="course-video">
@@ -3412,7 +4732,7 @@ Page content START -->
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <!-- Card body -->
                                     <div class="card-body px-3">
@@ -3421,12 +4741,12 @@ Page content START -->
                                             <!-- Price and time -->
                                             <div>
                                                 <div class="d-flex align-items-center">
-                                                    <h3 class="fw-bold mb-0 me-2">₹15000</h3>
+                                                    <h3 class="fw-bold mb-0 me-2">₹25000</h3>
                                                 </div>
                                             </div>
 
                                             <!-- Register button -->
-                                            <a href="#" class="btn btn-success mb-0">Register</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-success mb-0">Register</a>
                                         </div>
                                     </div>
                                 </div>
@@ -3499,23 +4819,15 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/17.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Frontend with Angular</a></h5>
+                                        <h5 class="card-title"><a href="../frontend-with-angular/frontend-with-angular.html">Frontend with Angular</a></h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-info bg-opacity-10 text-info"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Frontend
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
                                             <h3 class="text-success mb-0">₹15000</h3>
                                         </div>
@@ -3532,23 +4844,15 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/18.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Frontend with ReactJS</a></h5>
+                                        <h5 class="card-title"><a href="../frontend-with-react/frontend-with-react.html">Frontend with ReactJS</a></h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-info bg-opacity-10 text-info"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Frontend
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
                                             <h3 class="text-success mb-0">₹15000</h3>
                                         </div>
@@ -3565,26 +4869,18 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/21.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Fullstack with MEAN</a>
+                                        <h5 class="card-title"><a href="../fullstack-with-mean/fullstack-with-mean.html">Fullstack with MEAN</a>
                                         </h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-success bg-opacity-10 text-success"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Fullstack
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
-                                            <h3 class="text-success mb-0">₹15000</h3>
+                                            <h3 class="text-success mb-0">₹25000</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -3599,26 +4895,18 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/20.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Fullstack with MERN</a>
+                                        <h5 class="card-title"><a href="../fullstack-with-mern/fullstack-with-mern.html">Fullstack with MERN</a>
                                         </h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-success bg-opacity-10 text-success"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Fullstack
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
-                                            <h3 class="text-success mb-0">₹15000</h3>
+                                            <h3 class="text-success mb-0">₹25000</h3>
                                         </div>
                                     </div>
                                 </div>
