@@ -104,7 +104,7 @@
         <nav class="navbar navbar-expand-xl">
             <div class="container">
                 <!-- Logo START -->
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="../../index.html">
                     <img class="light-mode-item navbar-brand-item" src="../../common/assets/edupoly-logo-light.png"
                         alt="logo">
                     <img class="dark-mode-item navbar-brand-item" src="../../common/assets/edupoly-logo-dark.png"
@@ -165,7 +165,7 @@
                         </li>
 
                         <!-- Nav item 2 Tutorials -->
-                        <li class="nav-item dropdown"><a class="nav-link" href="/tutorials">Tutorials</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link" href="https://edupoly.com/tutorials">Tutorials</a></li>
 
                         <!-- Nav item 3 Trainings -->
                         <li class="nav-item dropdown">
@@ -238,6 +238,23 @@
         <!-- Logo Nav END -->
     </header>
     <!-- Header END -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="contactModalLabel">Edupoly - Contact Us</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe class="contactModal"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdNKhTFKU0TWAnlemwQTdL-VLEdpYUUOVG8fRQ1V9RWYLNAhA/viewform?embedded=true"
+                        frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- **************** MAIN CONTENT START **************** -->
     <main>
@@ -391,12 +408,12 @@ Page content START -->
                                                     <button
                                                         class="accordion-button fw-bold rounded d-sm-flex d-inline-block collapsed"
                                                         type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapse-1" aria-expanded="true"
+                                                        data-bs-target="#collapse-1" aria-expanded="false"
                                                         aria-controls="collapse-1">
                                                         Week 1 - HTML, CSS and Bootstrap
                                                     </button>
                                                 </h6>
-                                                <div id="collapse-1" class="accordion-collapse collapse show"
+                                                <div id="collapse-1" class="accordion-collapse collapse"
                                                     aria-labelledby="heading-1" data-bs-parent="#accordionExample2">
                                                     <div class="accordion-body p-0">
                                                         <hr class="my-0"> <!-- Divider -->
@@ -2428,12 +2445,12 @@ Page content START -->
                                                     <button
                                                         class="accordion-button fw-bold rounded d-sm-flex d-inline-block collapsed"
                                                         type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapse-21" aria-expanded="true"
+                                                        data-bs-target="#collapse-21" aria-expanded="false"
                                                         aria-controls="collapse-21">
                                                         Structuring a webpage with HTML
                                                     </button>
                                                 </h6>
-                                                <div id="collapse-21" class="accordion-collapse collapse show"
+                                                <div id="collapse-21" class="accordion-collapse collapse"
                                                     aria-labelledby="heading-1" data-bs-parent="#accordionExample3">
                                                     <div class="accordion-body p-0">
                                                         <hr class="my-0"> <!-- Divider -->
@@ -3400,7 +3417,7 @@ Page content START -->
                                                 </div>
                                             </div>
 
-                                            <!-- AAngular directives - ngIf -->
+                                            <!-- Angular directives - ngIf -->
                                             <div class="accordion-item mb-3">
                                                 <h6 class="accordion-header font-base" id="heading-7">
                                                     <button
@@ -3518,20 +3535,46 @@ Page content START -->
                                                 </div>
                                             </div>
 
-                                            <!-- Angular directives ngStyle -->
+                                            <!-- Angular directives ngStyle and ngClass -->
                                             <div class="accordion-item mb-3">
-                                                <h6 class="accordion-header font-base" id="heading-9">
+                                                <h6 class="accordion-header font-base" id="heading-8">
                                                     <button
                                                         class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
                                                         type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapse-29" aria-expanded="false"
-                                                        aria-controls="collapse-29">
-                                                        Angular directives - ngStyle
+                                                        data-bs-target="#collapse-28" aria-expanded="false"
+                                                        aria-controls="collapse-28">
+                                                        Angular directives - ngStyle and ngClass
                                                     </button>
                                                 </h6>
-                                                <div id="collapse-29" class="accordion-collapse collapse"
-                                                    aria-labelledby="heading-9" data-bs-parent="#accordionExample3">
+                                                <div id="collapse-28" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-8" data-bs-parent="#accordionExample3">
                                                     <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Basic ngClass example</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-ks3jnk?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Basic ngStyle example</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-1xgyq4?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
                                                         <hr class="my-0"> <!-- Divider -->
                                                         <!-- Item -->
                                                         <div class="d-flex align-items-center justify-content-between p-3">
@@ -3641,17 +3684,17 @@ Page content START -->
 
                                             <!-- Event binding -->
                                             <div class="accordion-item mb-3">
-                                                <h6 class="accordion-header font-base" id="heading-8">
+                                                <h6 class="accordion-header font-base" id="heading-9">
                                                     <button
                                                         class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
                                                         type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapse-28" aria-expanded="false"
-                                                        aria-controls="collapse-28">
+                                                        data-bs-target="#collapse-29" aria-expanded="false"
+                                                        aria-controls="collapse-29">
                                                         Event binding
                                                     </button>
                                                 </h6>
-                                                <div id="collapse-28" class="accordion-collapse collapse"
-                                                    aria-labelledby="heading-8" data-bs-parent="#accordionExample3">
+                                                <div id="collapse-29" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-9" data-bs-parent="#accordionExample3">
                                                     <div class="accordion-body p-0">
                                                         <hr class="my-0"> <!-- Divider -->
                                                         <!-- Item -->
@@ -3697,6 +3740,22 @@ Page content START -->
                                                                 </div>
                                                             </div>
                                                             <a href="https://helpful-lolly-9aed73.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                        <hr class="my-0"> <!-- Divider -->
+
+
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Changing image URL using property binding and event binding</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-w97jqs?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
                                                         </div>
 
                                                         <hr class="my-0"> <!-- Divider -->
@@ -3748,6 +3807,21 @@ Page content START -->
                                                                 </div>
                                                             </div>
                                                             <a href="https://incomparable-medovik-e99318.netlify.app/" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Image gallery app</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-cwevnw?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
                                                         </div>
 
                                                         <hr class="my-0"> <!-- Divider -->
@@ -4006,10 +4080,682 @@ Page content START -->
                                                 </div>
                                             </div>
 
-                                            
-                    
+                                            <!-- Custom directives -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-10">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-30" aria-expanded="false"
+                                                        aria-controls="collapse-30">
+                                                        Custom directives
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-30" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-10" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Change search box text colour using custom directives</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-b22fge?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                            
+                                            <!-- Pipes -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-11">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-31" aria-expanded="false"
+                                                        aria-controls="collapse-31">
+                                                        Pipes
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-31" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-11" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Builtin  pipes</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-pipes-wfsb1-dl?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Search and sort filter on click</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-sortpipe-dl?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Search data in a list using custom pipe</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-filterdataby-custom-pipes-fsb2-hb2ilr?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Two way data binding -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-12">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-32" aria-expanded="false"
+                                                        aria-controls="collapse-32">
+                                                        Two way data binding
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-32" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-12" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Data binding with ngModel</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-databinding-fsb7-c1y9fv?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Data binding with checkbox and button disabled</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-databinding2-fsb1?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">radio button based conditional display</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ngif-fsb1-mljit7?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">ngFor even odd property example</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ngfor-fsb1?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular calculator using radio buttons</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-calc-using-radiobuttons-assignment-xwmaiz?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Todo list with filtering</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-htsqmu?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Component communication -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-13">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-33" aria-expanded="false"
+                                                        aria-controls="collapse-33">
+                                                        Component communication
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-33" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-13" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Parent-child component communication using @Input decorator</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-parent-to-child-input-propertybinding-wfsb2?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Child-parent using @Output decorator</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/child-parent-output-wfsb1?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Using @Input and @Output together</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-yyb7gp?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Angular form handling -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-14">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-34" aria-expanded="false"
+                                                        aria-controls="collapse-34">
+                                                        Angular form handling
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-34" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-14" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Accessing and displaying form input values</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-9xxx8g?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Loan EMI calculator</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-8padfb?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular ReactiveForms validation, filling and resetting data</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-reactiveforms-fsb2-dl-muxgmp?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Reactive Forms validation and displaying data in table</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-aut44q?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Routing -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-15">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-35" aria-expanded="false"
+                                                        aria-controls="collapse-35">
+                                                        Routing
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-35" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-15" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Basic routing example</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-routingbasics-fsb2?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Routing example with several components with different data</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-512br3?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular childrouting with Router Links</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-childrouting-fsb2-ousv3e?file=src/app/students/students.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Parameterized routes</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-fwrhea?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Query Params</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-queryparams-wfsb1?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular Childrouting with Router navigate method</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-childrouting-fsb2-zrhk19?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Routing with guards</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-manas-routerconcept-foanjd?file=src/app/student/student.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular login logout with basic guard</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-loginlogout-fsb2wfsb1-gmri6r?file=src%2Fapp%2Fmygaurd.guard.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular lazy loading</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-lazyloading-demo-dl1-pe5wqa?file=src%2Fapp%2Fapp.routing.module.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Services and RxJS -->
+                                            <div class="accordion-item mb-3">
+                                                <h6 class="accordion-header font-base" id="heading-16">
+                                                    <button
+                                                        class="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse-36" aria-expanded="false"
+                                                        aria-controls="collapse-36">
+                                                        Services and RxJS
+                                                    </button>
+                                                </h6>
+                                                <div id="collapse-36" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading-16" data-bs-parent="#accordionExample3">
+                                                    <div class="accordion-body p-0">
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Basic component communication using a service</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-afb2td?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Arithmetic operation using basic service</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-services-fsb2-uk6zml?file=src%2Fapp%2Fapp.component.ts,src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Basic todo list using service</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-qdw8uf?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Todolist with delete functionality</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-zrxndf?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Basic products cart example using a service</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-rynhm9?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Email app using services</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-bumpez?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular async addition with spinner</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-asyncaddition-withspinner-fsb2-z5rjpw?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular HTTP calls using HttpClient</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-x5jygy?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular Classifieds Project</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-classifieds-project-fsb1-yykdn7?file=src%2Fapp%2Faddposts%2Faddposts.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular component communication using Eventemitter</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-componentcommunication-eventemitte-wfsb1?file=src%2Fapp%2Fapp.component.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Basic BehaviourSubject example</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-efkykr?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular Observables, Subjects and Behavioursubjects</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-observable-subjects-behavioursubjects-hpgpik?file=src%2Fapp%2Feventing.service.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Angular products cart with login and logout</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-ivy-y8kiga?file=src%2Fapp%2Fapp.component.html" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+
+                                                        <hr class="my-0"> <!-- Divider -->
+                                                        <!-- Item -->
+                                                        <div class="d-flex align-items-center justify-content-between p-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <!-- Icon -->
+                                                                <i class="bi bi-clipboard2-check text-success"></i>
+                                                                <!-- Content -->
+                                                                <div class="ms-2">
+                                                                    <h6 class="mb-0 fw-normal">Updating two components with EventEmitter and BehaviourSubject</h6>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://stackblitz.com/edit/angular-componentcommunication-rxjs-subject-wfsb1?file=src%2Fapp%2Feventingservice.service.ts" target="_blank" class="btn btn-sm btn-success mb-0"><i class="bi bi-play-fill me-2"></i>Live Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <!-- Schedule END -->
                                     </div>
@@ -4133,22 +4879,22 @@ Page content START -->
                             <div class="col-md-6 col-lg-12">
                                 <!-- Video START -->
                                 <div class="card shadow p-2 mb-4 z-index-9">
-                                    <div class="overflow-hidden rounded-3">
+                                    <!-- <div class="overflow-hidden rounded-3">
                                         <img src="assets/images/courses/4by3/01.jpg" class="card-img"
-                                            alt="course image">
+                                            alt="course image"> -->
                                         <!-- Overlay -->
-                                        <div class="bg-overlay bg-dark opacity-6"></div>
-                                        <div class="card-img-overlay d-flex align-items-start flex-column p-3">
+                                        <!-- <div class="bg-overlay bg-dark opacity-6"></div>
+                                        <div class="card-img-overlay d-flex align-items-start flex-column p-3"> -->
                                             <!-- Video button and link -->
-                                            <div class="m-auto">
+                                            <!-- <div class="m-auto">
                                                 <a href="https://www.youtube.com/embed/tXHviS-4ygo"
                                                     class="btn btn-lg text-danger btn-round btn-white-shadow mb-0"
                                                     data-glightbox="" data-gallery="course-video">
                                                     <i class="fas fa-play"></i>
                                                 </a>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </div> -->
+                                    <!-- </div> -->
 
                                     <!-- Card body -->
                                     <div class="card-body px-3">
@@ -4162,7 +4908,7 @@ Page content START -->
                                             </div>
 
                                             <!-- Register button -->
-                                            <a href="#" class="btn btn-success mb-0">Register</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-success mb-0">Register</a>
                                         </div>
                                     </div>
                                 </div>
@@ -4235,23 +4981,15 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/17.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Frontend with Angular</a></h5>
+                                        <h5 class="card-title"><a href="./frontend-with-angular.html">Frontend with Angular</a></h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-info bg-opacity-10 text-info"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Frontend
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
                                             <h3 class="text-success mb-0">₹15000</h3>
                                         </div>
@@ -4268,23 +5006,15 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/18.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Frontend with ReactJS</a></h5>
+                                        <h5 class="card-title"><a href="../frontend-with-react/frontend-with-react.html">Frontend with ReactJS</a></h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-info bg-opacity-10 text-info"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Frontend
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
                                             <h3 class="text-success mb-0">₹15000</h3>
                                         </div>
@@ -4301,26 +5031,18 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/21.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Fullstack with MEAN</a>
+                                        <h5 class="card-title"><a href="../fullstack-with-mean/fullstack-with-mean.html">Fullstack with MEAN</a>
                                         </h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-success bg-opacity-10 text-success"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Fullstack
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
-                                            <h3 class="text-success mb-0">₹15000</h3>
+                                            <h3 class="text-success mb-0">₹25000</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -4335,26 +5057,18 @@ Listed courses START -->
                                             <img src="assets/images/courses/4by3/20.jpg" class="card-img-top"
                                                 alt="course image">
                                         </div>
-                                        <!-- Hover element -->
-                                        <div class="card-img-overlay">
-                                            <div class="card-element-hover d-flex justify-content-end">
-                                                <a href="#" class="icon-md bg-white rounded-circle text-center">
-                                                    <i class="fas fa-shopping-cart text-danger"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <!-- Title -->
-                                        <h5 class="card-title"><a href="#">Fullstack with MERN</a>
+                                        <h5 class="card-title"><a href="../fullstack-with-mern/fullstack-with-mern.html">Fullstack with MERN</a>
                                         </h5>
                                         <!-- Badge and Price -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="badge bg-info bg-opacity-10 text-info"><i
+                                            <span class="badge bg-success bg-opacity-10 text-success"><i
                                                     class="fas fa-circle small fw-bold me-2"></i>Fullstack
-                                                Development</a>
+                                                Development</span>
                                             <!-- Price -->
-                                            <h3 class="text-success mb-0">₹15000</h3>
+                                            <h3 class="text-success mb-0">₹25000</h3>
                                         </div>
                                     </div>
                                 </div>
