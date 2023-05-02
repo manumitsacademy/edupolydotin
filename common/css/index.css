@@ -18,3 +18,7 @@
 [data-bs-theme=light] #project-week a{
   color: #747579;
 }
+
+.nav-link{
+    cursor:pointer;
+}
