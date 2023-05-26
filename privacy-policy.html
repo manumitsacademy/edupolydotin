@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Eduport - LMS, Education and Course Theme</title>
+  <link rel="icon" type="image/x-icon" href="../../common/assets/favicon.ico">
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="Webestica.com" />
+  <meta name="description" content="Eduport- LMS, Education and Course Theme" />
+
+  <!-- Dark mode -->
+  <script>
+    const storedTheme = localStorage.getItem("theme");
+
+    const getPreferredTheme = () => {
+      if (storedTheme) {
+        return storedTheme;
+      }
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+    };
+
+    const setTheme = function (theme) {
+      if (
+        theme === "auto" &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.documentElement.setAttribute("data-bs-theme", "dark");
+      } else {
+        document.documentElement.setAttribute("data-bs-theme", theme);
+      }
+    };
+
+    setTheme(getPreferredTheme());
+
+    window.addEventListener("DOMContentLoaded", () => {
+      var el = document.querySelector(".theme-icon-active");
+      if (el != "undefined" && el != null) {
+        const showActiveTheme = (theme) => {
+          const activeThemeIcon = document.querySelector(
+            ".theme-icon-active use"
+          );
+          const btnToActive = document.querySelector(
+            `[data-bs-theme-value="${theme}"]`
+          );
+          const svgOfActiveBtn = btnToActive
+            .querySelector(".mode-switch use")
+            .getAttribute("href");
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((element) => {
+              element.classList.remove("active");
+            });
+
+          btnToActive.classList.add("active");
+          activeThemeIcon.setAttribute("href", svgOfActiveBtn);
+        };
+
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", () => {
+            if (storedTheme !== "light" || storedTheme !== "dark") {
+              setTheme(getPreferredTheme());
+            }
+          });
+
+        showActiveTheme(getPreferredTheme());
+
+        document
+          .querySelectorAll("[data-bs-theme-value]")
+          .forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+              const theme = toggle.getAttribute("data-bs-theme-value");
+              localStorage.setItem("theme", theme);
+              setTheme(theme);
+              showActiveTheme(theme);
+            });
+          });
+      }
+    });
+  </script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" type="text/css" href="./common/tiny-slider/tiny-slider.css" />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="./common/css/style.css" />
+
+  <!-- Page styles -->
+  <link rel="stylesheet" href="./common/css/index.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+  <!-- Header START -->
+  <header class="navbar-light navbar-sticky">
+    <!-- Logo Nav START -->
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <!-- Logo START -->
+        <a class="navbar-brand" href="./index.html">
+          <img class="light-mode-item navbar-brand-item" src="./common/assets/edupoly-logo-light.png" alt="logo">
+          <img class="dark-mode-item navbar-brand-item" src="./common/assets/edupoly-logo-dark.png" alt="logo">
+        </a>
+        <!-- Logo END -->
+
+        <!-- Responsive navbar toggler -->
+        <button class="navbar-toggler ms-auto ms-sm-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-animation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <!-- Main navbar START -->
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+          <!-- Nav Search START -->
+          <!--                     <div class="col-xl-7">
+                        <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+                            <div class="nav-item w-100">
+                                <form class="rounded position-relative">
+                                    <input class="form-control pe-5 bg-secondary bg-opacity-10 border-0" type="search"
+                                        placeholder="Search" aria-label="Search">
+                                    <button
+                                        class="btn btn-link bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y"
+                                        type="submit"><i class="fas fa-search fs-6 text-primary"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> -->
+          <!-- Nav Search END -->
+
+          <!-- Nav Main menu START -->
+          <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <!-- Nav item 1 Courses -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Courses</a>
+              <ul class="dropdown-menu" aria-labelledby="demoMenu">
+                <li> <a class="dropdown-item" href="./courses/frontend-with-angular/frontend-with-angular.html">Frontend
+                    with Angular</a>
+                </li>
+                <li> <a class="dropdown-item" href="./courses/frontend-with-react/frontend-with-react.html">Frontend
+                    with ReactJS</a>
+                </li>
+                <li> <a class="dropdown-item" href="./courses/fullstack-with-mean/fullstack-with-mean.html">Full Stack
+                    with MEAN</a></li>
+                <li> <a class="dropdown-item" href="./courses/fullstack-with-mern/fullstack-with-mern.html">Full Stack
+                    with MERN</a></li>
+                <li>
+                  <a class="dropdown-item" href="./courses/Programming-with-JAVA/Programming-with-JAVA.html">Programming
+                    with
+                    Java</a>
+                </li>
+                <li>
+                  <a class="dropdown-item"
+                    href="./courses/Programming-with-Python/Programming-with-Python.html">Programming with Python</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Nav item 2 Tutorials -->
+            <li class="nav-item dropdown"><a class="nav-link" href="https://edupoly.com/tutorials">Tutorials</a></li>
+
+            <!-- Nav item 3 Trainings -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Trainings</a>
+              <ul class="dropdown-menu" aria-labelledby="demoMenu">
+                <li> <a class="dropdown-item" href="https://edupoly.com/bootcamp-training">Corporate
+                    training</a></li>
+                <li> <a class="dropdown-item" href="https://edupoly.com/bootcamp-training">Bootcamp
+                    training</a></li>
+              </ul>
+            </li>
+
+            <!-- Nav item 4 Contact Us -->
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</a>
+            </li>
+          </ul>
+          <!-- Nav Main menu END -->
+        </div>
+        <!-- Main navbar END -->
+        <!-- Dark mode options START -->
+        <div class="dropdown">
+          <button class="btn btn-light btn-sm lh-1 p-2 mb-0" id="bd-theme" type="button" aria-expanded="false"
+            data-bs-toggle="dropdown" data-bs-display="static">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+              class="bi bi-circle-half fa-fw theme-icon-active" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+              <use href="#"></use>
+            </svg>
+          </button>
+          <ul class="dropdown-menu min-w-auto dropdown-menu-end" aria-labelledby="bd-theme">
+            <li class="mb-1">
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                <svg width="16" height="16" fill="currentColor"
+                  class="bi bi-brightness-high-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+                  <path
+                    d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                  <use href="#"></use>
+                </svg>Light
+              </button>
+            </li>
+            <li class="mb-1">
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-moon-stars-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+                  <path
+                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                  <path
+                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+                  <use href="#"></use>
+                </svg>Dark
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-circle-half fa-fw mode-switch me-1" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+                  <use href="#"></use>
+                </svg>Auto
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- Dark mode options END -->
+      </div>
+    </nav>
+    <!-- Logo Nav END -->
+  </header>
+  <!-- Header END -->
+
+  <!-- **************** MAIN CONTENT START **************** -->
+  <main>
+
+
+    <!-- =======================
+Page Content START -->
+    <section>
+      <div class="container" data-sticky-container>
+        <div class="row g-4">
+          <!-- Left side START -->
+          <div class="col-md-3">
+            <div data-sticky data-margin-top="80" data-sticky-for="576">
+              <div id="nav-scroll" class="navbar">
+                <!-- <nav class="nav nav-pills nav-pill-soft flex-column">
+                  <a class="nav-link" href="#item-1"><i class="bi bi-emoji-smile fa-fw me-2"></i>Get
+                    Started</a>
+                  <a class="nav-link" href="#item-2"><i class="bi bi-layers fa-fw me-2"></i>Account Setup</a>
+                  <a class="nav-link" href="#item-3"><i class="bi bi-info-circle fa-fw me-2"></i>Other
+                    Topics</a>
+                  <a class="nav-link" href="#item-4"><i class="bi bi-house fa-fw me-2"></i>Advance Usage</a>
+                </nav> -->
+                <img src="common/assets/shield copy.png">
+              </div>
+            </div>
+          </div>
+          <!-- Left side END -->
+
+          <!-- Right side START -->
+          <div class="col-md-9">
+            <div class="nav-scroll" data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-smooth-scroll="true"
+              tabindex="0">
+              <!-- Get Started content START -->
+              <div id="item-1">
+                <div class="card bg-transparent">
+                  <!-- Article title -->
+                  <div class="card-header bg-transparent border-bottom py-0 px-0">
+                    <h2>Privacy policy</h2>
+                  </div>
+                  <!-- Article Info -->
+                  <div class="card-body px-0 pb-0">
+                    <p>
+                      We at Edupoly Solutions Private Limited ("Edupoly", "we", "us") respect your privacy and want you
+                      to understand how we collect, use, and share data about you. This Privacy Policy covers our data
+                      collection practices and describes your rights to access, correct, or restrict our use of your
+                      personal data.
+                    </p>
+
+                    <p>
+                      Unless we link to a different policy or state otherwise, this Privacy Policy applies when you
+                      visit or use the Edupoly website, mobile applications, APIs or related services (the "Services").
+                    </p>
+
+                    <p>
+                      The data controller for all data collected from you with regards to your use of the Services is
+                      Edupoly Solutions Private Limited, a private company registered in India, with the registered
+                      office at 372, HMT Hills Rd, Addagutta Society, Jal Vayu Vihar, Kukatpally, Hyderabad, Telangana -
+                      500085. You can get in touch with our privacy team at info.edupoly@gmail.com
+                    </p>
+
+                    <p>
+                      By using the Services, you agree to the terms of this Privacy Policy. You shouldn't use the
+                      Services if you don't agree with this Privacy Policy or any other agreement that governs your use
+                      of the Services.
+                    </p>
+
+                    <h4 class="mt-4">What data we collect</h4>
+                    <p>We collect certain data from you directly, like the information you enter yourself, data about
+                      your participation in courses, and data from third-party platforms you connect with Edupoly. When
+                      you register with us, you provide us with personal information that includes your name, email and
+                      phone number.</p>
+
+
+                    <h4 class="mt-4">How we use your data</h4>
+
+                    <p>We use your data to do things like provide our Services, communicate with you, troubleshoot
+                      issues, secure against fraud and abuse, improve and update our Services, analyze how people use
+                      our Services, serve personalized advertising, and as required by law or necessary for safety and
+                      integrity.</p>
+                    <p><strong>We use the data we collect through your use of the Services to:</strong></p>
+                    <ul>
+                      <li>Provide and administer the Services, including to display customized content and facilitate communication with other users;</li>
+                      <li>Process your requests and orders for programs, courses, specific services, information, or features;</li>
+                      <li>Communicate with you about your account by:
+                      <ul>
+                      <li>Responding to your questions and concerns;</li>
+                      <li>Sending you administrative messages and information, including messages from instructors and teaching assistants, notifications about changes to our Service, and updates to our agreements;</li>
+                      <li>Sending you information and in-app messages about your progress in courses, feedback about the course, referral / reward programs, new services, new features, promotions, newsletters, and other available courses (which you can opt out of at any time);</li>
+                      </ul>
+                      </li>
+                      <li>Manage your account preferences;</li>
+                      <li>Facilitate the Services’ technical functioning, including troubleshooting and resolving issues, securing the Services, and preventing fraud and abuse;</li>
+                      <li>Solicit feedback from users;</li>
+                      </ul>
+
+                    <!-- Divider -->
+                    <div class="text-center h5 my-5">. . .</div>
+                  </div>
+                </div>
+                <!-- Right side END -->
+              </div>
+            </div>
+    </section>
+    <!-- =======================
+Page Content END -->
+  </main>
+  <!-- **************** MAIN CONTENT END **************** -->
+
+  <!-- =======================
+    Footer START -->
+  <footer class="py-5 bg-light">
+    <div class="container">
+      <!-- Row START -->
+      <div class="row g-4">
+
+        <!-- Widget 1 START -->
+        <div class="col-lg-3">
+          <!-- logo -->
+          <a class="me-0" href="index.html">
+            <img class="light-mode-item h-40px" src="./common/assets/edupoly-logo-light.png" alt="logo">
+            <img class="dark-mode-item h-40px" src="./common/assets/edupoly-logo-dark.png" alt="logo">
+          </a>
+          <p class="my-3">Best learning platform with top end courses. Taught by experts to help you acquire new skills
+            and lead your career.</p>
+          <!-- Social media icon -->
+          <ul class="list-inline mb-0 mt-3">
+            <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-success" target="_blank"
+                href="https://wa.me/+919561214818"><i class="fab fa-fw fa-whatsapp"></i></a> </li>
+            <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram" target="_blank"
+                href="https://instagram.com/edu.poly?igshid"><i class="fab fa-fw fa-instagram"></i></a> </li>
+            <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-youtube" target="_blank"
+                href="https://www.youtube.com/@PraveenClasses?sub_confirmation=1"><i
+                  class="fab fa-fw fa-youtube"></i></a> </li>
+            <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-linkedin" target="_blank"
+                href="https://in.linkedin.com/company/edupoly"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
+          </ul>
+        </div>
+        <!-- Widget 1 END -->
+
+        <!-- Widget 2 START -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <!-- Link block -->
+            <div class="col">
+              <h5 class="mb-2 mb-md-4 text-center">Popular videos</h5>
+              <ul class="nav flex-column align-items-center">
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://youtu.be/MZAT1W7IAZ8">CSS
+                    complete course for beginners</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://youtu.be/BeKLiRgokhk">JS Promises
+                    and AJAX</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://youtu.be/mhKRZO1auu4">ReactJS
+                    redux foundation</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank"
+                    href="https://youtube.com/playlist?list=PL9LrrAXIZDavMNcT55HAAEwomun1-Ylvs">HTTP CRUD operations in
+                    Angular</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank"
+                    href="https://youtube.com/playlist?list=PL9LrrAXIZDasrWXAYQvNHrVcGXBTUSchI">Angular E-Commerce
+                    project</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Widget 2 END -->
+
+        <!-- Widget 3 START -->
+        <div class="col-lg-3">
+          <h5 class="mb-2 mb-md-4">Get in touch with us</h5>
+          <!-- Time -->
+          <p class="mb-2">
+            Address:<span class="h6 fw-light ms-2">372, HMT Hills Rd, Addagutta Society, Jal Vayu Vihar,
+              Kukatpally, Hyderabad, Telangana 500085</span>
+            <span class="d-block small">(9:AM to 8:PM IST)</span>
+          </p>
+
+          <p class="mb-0">Email:<a class="h6 fw-light ms-2" href="mailto:someone@example.com">info.edupoly@gmail.com</a>
+          </p>
+        </div>
+        <!-- Widget 3 END -->
+      </div><!-- Row END -->
+    </div>
+  </footer>
+  <!-- =======================
+    Footer END -->
+
+  <!-- Back to top -->
+  <div class="back-top">
+    <i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i>
+  </div>
+
+  <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- Vendors -->
+  <script src="./common/sticky-js/sticky.min.js"></script>
+
+  <!-- Template Functions -->
+  <script src="./common/js/functions.js"></script>
+</body>
+
+</html>
