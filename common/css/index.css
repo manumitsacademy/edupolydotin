@@ -55,18 +55,43 @@
 .awsgradient{
     background-image: linear-gradient(to right, #f79400,#000000);
 }
-.reviews{
+ .reviews{
     padding:20px;
-
+    column-gap: 20px;
+    column-width: 300px;
 }
+
 .review{
     list-style: none;
     margin:10px;
+    padding:20px;
+    break-inside: avoid;
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    color:white;
+
     border-radius: 31px 0px 30px 31px;
 }
+.review:nth-child(2n+1){
+    background-color:rgb(120, 88, 88);
+}
+.review:nth-child(2n){
+    background-color:rgb(83, 116, 105);
+}
+/* .review:nth-child(3n+2){
+    background-color:rgb(116, 83, 115);
+} */
+.review div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.review div a{
+    color:rgb(142, 201, 255)
+}
+/*
 .review p{
     color:black;
     font-weight: bold;
@@ -91,4 +116,4 @@
 }
 .review a{
     font-size: 14px;
-}
+} */
