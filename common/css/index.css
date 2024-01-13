@@ -69,7 +69,6 @@
     display: flex;
     flex-wrap: wrap;
     color:white;
-
     border-radius: 31px 0px 30px 31px;
 }
 .review:nth-child(2n+1){
