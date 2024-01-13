@@ -35,7 +35,7 @@
     background-image: linear-gradient(to right, #149eca ,#75d9f7);
 }
 .javascriptgradient{
-    background-image: linear-gradient(to right, #d7be02 ,#f4e04b);
+    background-image: linear-gradient(to right, #d7be02 ,#27230d);
 }
 .merngradient{
     background-image: linear-gradient(to right, #149eca ,green);
@@ -69,6 +69,7 @@
     display: flex;
     flex-wrap: wrap;
     color:white;
+
     border-radius: 31px 0px 30px 31px;
 }
 .review:nth-child(2n+1){
